@@ -11,6 +11,7 @@
     <modules>
         <module>jsp</module>
         <module>tiles</module>
+        <module>thymeleaf</module>
     </modules>
 
 
