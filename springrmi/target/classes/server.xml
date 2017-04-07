@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <bean id="serviceExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="MobileAccountService"/>
+        <property name="service" ref="accountService"/>
+        <property name="serviceInterface"
+                  value="com.lxs.server.AccountService"/>
+        <property name="registryPort" value="8087"/>
+        <property name="servicePort" value="8088"/>
+    </bean>
+
+    <bean id="accountService" class="com.lxs.server.MobileAccountServiceImpl"/>
+
+</beans>

@@ -1,0 +1,6 @@
+com/lxs/server/RmiServer.class
+com/lxs/client/Client.class
+com/lxs/server/AccountService.class
+com/lxs/client/RmiClient.class
+com/lxs/server/MobileAccountServiceImpl.class
+com/lxs/server/Server.class
